@@ -1,0 +1,13 @@
+repos:
+- repo: local
+  hooks:
+    - id: php-cs-fixer
+      name: php-cs-fixer
+      entry: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --ansi --verbose --diff --dry-run
+      language: script
+      exclude: '^\.php-cs-fixer\.cache$'
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
