@@ -25,7 +25,7 @@ To confirm, run this command and if it return version number then it's good.
 
 ```console
 pre-commit --version
-``` 
+```
 
 ## Installation
 
@@ -60,23 +60,23 @@ repos:
   hooks:
     - id: trailing-whitespace
     - id: end-of-file-fixer
-``` 
+```
 
-This will use the installed `php-cs-fixer` in your local that is located in `./tools` folder. 
+This will use the installed `php-cs-fixer` in your local that is located in `./tools` folder.
 
 ```yaml
 entry: tools/php-cs-fixer/vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --ansi --verbose --diff --dry-run
 ```
 
 ### entry: breakdown
- 
+
 - `tools/php-cs-fixer/vendor/bin/php-cs-fixer`: This specifies the path to the PHP-CS-Fixer executable file.
 - `fix`: This is the command to fix the code.
 - `--config=.php-cs-fixer.php`: This specifies the path to the configuration file for PHP-CS-Fixer.
 - `--ansi`: This enables the use of ANSI escape codes for colored output.
 - `--verbose`: This enables verbose output, which includes more details about the changes made to the code.
 - `--diff`: This generates a diff of the changes made to the code.
-- `--dry-run`: This runs PHP-CS-Fixer without actually making any changes to the code. 
+- `--dry-run`: This runs PHP-CS-Fixer without actually making any changes to the code.
 
 Once you have a configuration file, you can apply it to the project by running.
 
@@ -84,7 +84,7 @@ Once you have a configuration file, you can apply it to the project by running.
 pre-commit install
 ```
 
-## 3. Setup php-cs-fixer config 
+## 3. Setup php-cs-fixer config
 After setting up your `.pre-commit-config.yaml`, create new folder and name it `.php-cs-fixer.php` then insert this code.
 
 ```php
@@ -112,8 +112,8 @@ You don't want to push the contents of `./tools` and any cache that the php-cs-f
 Add this path inside of your `.gitignore` file.
 
 ```bash
-/tools 
-.php-cs-fixer.cache 
+/tools
+.php-cs-fixer.cache
 ```
 
 ## Conclusion
