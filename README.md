@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://cs.symfony.com">
-        <img src="./logo.png" title="PHP CS Fixer" alt="PHP CS Fixer logo">
+        <img src="https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/raw/master/logo.png" title="PHP CS Fixer" alt="PHP CS Fixer logo">
     </a>
 </p>
 
@@ -155,3 +155,10 @@ This command will not run the `php-cs-fixer` and immediately commit your changes
   pre-commit install
   pre-commit autoupdate
   ```
+
+## Screenshots
+- This is an example of `php-cs-fixer` detecting an errors in your staging files.
+![image](https://user-images.githubusercontent.com/104751512/236423214-6d183e1c-e0e4-4dfb-a8a9-b900386e4d8d.png)
+
+- If there are no errors, this should be the output if you commit your changes.
+![image](https://user-images.githubusercontent.com/104751512/236424256-4ac40ec2-f1b3-4539-9964-d1b676e246de.png)
